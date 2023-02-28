@@ -21,16 +21,19 @@ function joblog(name) {
     $('#joblog_box').css('display', 'block').siblings().css('display', 'none');
 }
 
-function joblogLink(name) {
+function joblogLink(href) {
     var joblogTab = $(window.parent.document.getElementById('joblog_tab'));
+    var joblogBox = $(window.parent.document.getElementById('joblog_box'));
     var tabs = $(window.parent.document.getElementsByClassName('tabs'));
     var boxs = $(window.parent.document.getElementsByClassName('boxs'));
-    if (joblogTab.length <= 0) {
-        tabs.append('<li id="joblog_tab"><span>' + I18n.joblog_name + '</span><span class="ion-close-circled tab-close" onclick="tabClose(\'joblog\')" ></span></li>');
-        boxs.append('<div class="tabs-box" id="joblog_box"><iframe height="100%" width="100%" src="' + name + '/joblog" style="border: 0"></iframe></div>');
+    if (joblogTab.length > 0) {
+        joblogTab.remove();
+        joblogBox.remove();
     }
+    tabs.append('<li id="joblog_tab"><span>' + I18n.joblog_name + '</span><span class="ion-close-circled tab-close" onclick="tabClose(\'joblog\')" ></span></li>');
+    boxs.append('<div class="tabs-box" id="joblog_box"><iframe height="100%" width="100%" src="' + href + '" style="border: 0"></iframe></div>');
     joblogTab = $(window.parent.document.getElementById('joblog_tab'));
-    var joblogBox = $(window.parent.document.getElementById('joblog_box'));
+    joblogBox = $(window.parent.document.getElementById('joblog_box'));
     joblogTab.addClass('active').siblings().removeClass('active');
     joblogBox.css('display', 'block').siblings().css('display', 'none');
 }

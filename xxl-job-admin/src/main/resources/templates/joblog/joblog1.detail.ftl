@@ -39,8 +39,8 @@
                         <li>
                             <a href="javascript:void(0);" >
                                 <div class="flex" style="width: 45px;">
-                                    <div class="joblog_detail_bg joblog_detail_bg_black" id="detail_bg_black"></div>
                                     <div class="joblog_detail_bg joblog_detail_bg_white" id="detail_bg_white"></div>
+                                    <div class="joblog_detail_bg joblog_detail_bg_black" id="detail_bg_black"></div>
                                 </div>
                             </a>
                         </li>

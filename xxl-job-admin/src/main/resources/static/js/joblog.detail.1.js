@@ -6,9 +6,9 @@ $(function() {
 
     $('.joblog_detail_bg').on('click', function () {
         if($(this).attr('id') == 'detail_bg_white') {
-            $('.detail_bg').addClass('detail_bg_white').removeClass('detail_bg_default');
-        } else {
             $('.detail_bg').addClass('detail_bg_default').removeClass('detail_bg_white');
+        } else {
+            $('.detail_bg').addClass('detail_bg_white').removeClass('detail_bg_default');
         }
     });
 

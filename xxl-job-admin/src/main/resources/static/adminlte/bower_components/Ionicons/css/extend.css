@@ -71,12 +71,12 @@ ul {
     justify-content: space-between;
 }
 .detail_bg_default {
-    color: white;
-    background: black;
-}
-.detail_bg_white {
     color: #333;
     background: #f5f5f5;
+}
+.detail_bg_white {
+    color: white;
+    background: black;
 }
 .joblog_view_log {
     font-size: 20px;
